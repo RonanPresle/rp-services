@@ -1,3 +1,6 @@
+// Import styles
+import './style.css';
+
 // Language switching functionality
 let currentLang = localStorage.getItem('preferredLanguage') || 'fr';
 
@@ -80,7 +83,7 @@ async function initializeHomeSwiper() {
         slide.className = 'swiper-slide';
         
         slide.innerHTML = `
-          <a href="/pages/product.html?id=${product.id}" class="featured-product">
+          <a href="/product.html?id=${product.id}" class="featured-product">
             <img src="${product.images[0]}" alt="${product.titleEn}" />
             <div class="featured-product-info">
               <h3 data-en="${product.titleEn}" data-fr="${product.titleFr}">${product.titleEn}</h3>
@@ -141,7 +144,7 @@ async function initializeHomeSwiper() {
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
   // Set the access key from environment variable
-  document.getElementById('access-key').value = import.meta.env.VITE_WEBFORM_ACCESS_KEY;
+  document.getElementById('access-key').value = process.env.WEB3FORM_ACCESS_KEY;
 
   contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -194,7 +197,7 @@ async function loadGallery() {
     
     Object.values(data.products).forEach(product => {
       const item = document.createElement('a');
-      item.href = `/pages/product.html?id=${product.id}`;
+      item.href = `/product.html?id=${product.id}`;
       item.className = 'gallery-item';
       
       item.innerHTML = `

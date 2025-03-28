@@ -29,9 +29,20 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.75rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.logo-link:hover {
+  opacity: 0.8;
 }
 
 .site-title {
@@ -72,7 +83,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  padding: 1rem;
+  padding: 0.75rem;
   background-color: var(--primary-color);
 }
 
@@ -92,16 +103,16 @@ nav {
 main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .hero {
   text-align: center;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 
 .hero h1 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   color: var(--primary-color);
   margin-bottom: 0.5rem;
 }
@@ -109,7 +120,7 @@ main {
 .subtitle {
   font-size: 1.25rem;
   color: var(--secondary-color);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .hero-description {
@@ -119,12 +130,12 @@ main {
 }
 
 .featured-projects {
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .featured-projects h2 {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   color: var(--primary-color);
 }
 
