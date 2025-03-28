@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product - RP Services</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="/images/logo.svg" alt="RP Services Logo" height="40" />
+        </div>
+        <div class="site-title">RP Services</div>
+        <div class="language-selector">
+          <button class="lang-btn active" data-lang="en">
+            <img src="/images/en-flag.svg" alt="English" height="20" />
+          </button>
+          <button class="lang-btn" data-lang="fr">
+            <img src="/images/fr-flag.svg" alt="Français" height="20" />
+          </button>
+        </div>
+      </nav>
+      <div class="menu">
+        <a href="/" data-en="Home" data-fr="Accueil">Home</a>
+        <a href="/gallery.html" data-en="Gallery" data-fr="Galerie">Gallery</a>
+        <a href="/contact.html" data-en="Contact" data-fr="Contact">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="product-details">
+        <a href="/gallery.html" class="back-link">
+          <span data-en="← Back to Gallery" data-fr="← Retour à la Galerie">← Back to Gallery</span>
+        </a>
+        <div class="product-content">
+          <div class="product-images-container">
+            <div class="main-image">
+              <img id="main-image" src="" alt="Product Image" />
+            </div>
+            <div class="thumbnail-grid" id="thumbnail-grid"></div>
+          </div>
+          <div class="product-info">
+            <h1 id="product-title"></h1>
+            <div class="product-description">
+              <p id="product-description"></p>
+            </div>
+          </div>
+        </div>
+        <a href="/gallery.html" class="back-link bottom">
+          <span data-en="← Back to Gallery" data-fr="← Retour à la Galerie">← Back to Gallery</span>
+        </a>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

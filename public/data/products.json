@@ -1,0 +1,69 @@
+{
+  "products": {
+    "consulting": {
+      "id": "consulting",
+      "titleEn": "Professional Consulting",
+      "titleFr": "Consultation Professionnelle",
+      "descriptionEn": "Our professional consulting services help businesses optimize their operations and achieve their strategic goals. With years of experience across various industries, we provide tailored solutions that drive real results.",
+      "descriptionFr": "Nos services de consultation professionnelle aident les entreprises à optimiser leurs opérations et à atteindre leurs objectifs stratégiques. Avec des années d'expérience dans divers secteurs, nous fournissons des solutions sur mesure qui génèrent des résultats concrets.",
+      "images": [
+        "https://picsum.photos/800/600?random=1",
+        "https://picsum.photos/800/600?random=2",
+        "https://picsum.photos/800/600?random=3"
+      ],
+      "featured": true
+    },
+    "business-solutions": {
+      "id": "business-solutions",
+      "titleEn": "Business Solutions",
+      "titleFr": "Solutions d'Affaires",
+      "descriptionEn": "Our comprehensive business solutions encompass everything from digital transformation to process optimization. We work closely with our clients to implement innovative solutions that drive efficiency and growth.",
+      "descriptionFr": "Nos solutions d'affaires complètes englobent tout, de la transformation numérique à l'optimisation des processus. Nous travaillons en étroite collaboration avec nos clients pour mettre en œuvre des solutions innovantes qui favorisent l'efficacité et la croissance.",
+      "images": [
+        "https://picsum.photos/800/600?random=4",
+        "https://picsum.photos/800/600?random=5",
+        "https://picsum.photos/800/600?random=6"
+      ],
+      "featured": true
+    },
+    "team-collaboration": {
+      "id": "team-collaboration",
+      "titleEn": "Team Collaboration",
+      "titleFr": "Collaboration d'Équipe",
+      "descriptionEn": "Our team collaboration solutions help organizations build stronger, more efficient teams. We provide tools and methodologies that enhance communication, productivity, and team synergy.",
+      "descriptionFr": "Nos solutions de collaboration d'équipe aident les organisations à construire des équipes plus fortes et plus efficaces. Nous fournissons des outils et des méthodologies qui améliorent la communication, la productivité et la synergie d'équipe.",
+      "images": [
+        "https://picsum.photos/800/600?random=7",
+        "https://picsum.photos/800/600?random=8",
+        "https://picsum.photos/800/600?random=9"
+      ],
+      "featured": true
+    },
+    "innovation-hub": {
+      "id": "innovation-hub",
+      "titleEn": "Innovation Hub",
+      "titleFr": "Centre d'Innovation",
+      "descriptionEn": "Our innovation hub is where ideas transform into reality. We provide a creative environment and expert guidance to help businesses develop and implement innovative solutions.",
+      "descriptionFr": "Notre centre d'innovation est l'endroit où les idées se transforment en réalité. Nous fournissons un environnement créatif et des conseils d'experts pour aider les entreprises à développer et à mettre en œuvre des solutions innovantes.",
+      "images": [
+        "https://picsum.photos/800/600?random=10",
+        "https://picsum.photos/800/600?random=11",
+        "https://picsum.photos/800/600?random=12"
+      ],
+      "featured": true
+    },
+    "bookshelf": {
+      "id": "bookshelf",
+      "titleEn": "Book shelf",
+      "titleFr": "Bibliothèque",
+      "descriptionEn": "English description for the bookshelf",
+      "descriptionFr": "Description en français pour la bibliothèuqe.",
+      "images": [
+        "https://picsum.photos/800/600?random=13",
+        "https://picsum.photos/800/600?random=14",
+        "https://picsum.photos/800/600?random=15"
+      ],
+      "featured": true
+    }
+  }
+}
