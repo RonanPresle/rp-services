@@ -80,7 +80,7 @@ async function initializeHomeSwiper() {
         slide.className = 'swiper-slide';
         
         slide.innerHTML = `
-          <a href="/product.html?id=${product.id}" class="featured-product">
+          <a href="/pages/product.html?id=${product.id}" class="featured-product">
             <img src="${product.images[0]}" alt="${product.titleEn}" />
             <div class="featured-product-info">
               <h3 data-en="${product.titleEn}" data-fr="${product.titleFr}">${product.titleEn}</h3>
@@ -194,7 +194,7 @@ async function loadGallery() {
     
     Object.values(data.products).forEach(product => {
       const item = document.createElement('a');
-      item.href = `/product.html?id=${product.id}`;
+      item.href = `/pages/product.html?id=${product.id}`;
       item.className = 'gallery-item';
       
       item.innerHTML = `
