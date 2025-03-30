@@ -74,7 +74,7 @@ function switchLanguage(lang, save = true) {
 async function initializeHomeSwiper() {
   if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
     try {
-      const response = await fetch('/data/products.json');
+      const response = await fetch('./data/products.json');
       const data = await response.json();
       const featuredProducts = document.getElementById('featured-products');
       
