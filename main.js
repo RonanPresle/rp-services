@@ -5,8 +5,8 @@ import './style.css';
 let currentLang = localStorage.getItem('preferredLanguage') || 'fr';
 
 async function loadComponents() {
-  const headerResponse = await fetch('/components/header.html');
-  const footerResponse = await fetch('/components/footer.html');
+  const headerResponse = await fetch('./components/header.html');
+  const footerResponse = await fetch('./components/footer.html');
   
   const headerHtml = await headerResponse.text();
   const footerHtml = await footerResponse.text();
@@ -83,7 +83,7 @@ async function initializeHomeSwiper() {
         slide.className = 'swiper-slide';
         
         slide.innerHTML = `
-          <a href="/product.html?id=${product.id}" class="featured-product">
+          <a href="./product.html?id=${product.id}" class="featured-product">
             <img src="${product.images[0]}" alt="${product.titleEn}" />
             <div class="featured-product-info">
               <h3 data-en="${product.titleEn}" data-fr="${product.titleFr}">${product.titleEn}</h3>
