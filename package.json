@@ -5,7 +5,8 @@
   "scripts": {
     "build": "webpack --config webpack.config.ts --mode production",
     "preview": "http-server dist",
-    "generate": "npx ts-node build-script/main.ts"
+    "generate": "npx ts-node build-script/main.ts",
+    "deploy": "npm run generate && npm run build"
   },
   "dependencies": {
   },
