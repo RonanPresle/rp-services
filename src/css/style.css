@@ -450,14 +450,14 @@ main {
   display: none;
 }
 
-.form-status.success {
+.form-status.success.visible {
   display: block;
   background-color: #d4edda;
   color: #155724;
   border: 1px solid #c3e6cb;
 }
 
-.form-status.error {
+.form-status.error.visible {
   display: block;
   background-color: #f8d7da;
   color: #721c24;

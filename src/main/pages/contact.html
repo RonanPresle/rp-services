@@ -13,7 +13,7 @@
       <section class="contact">
         <h1 data-en="Contact Us" data-fr="Contactez-nous">Contact Us</h1>
         <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" id="access-key">
+          <input type="hidden" name="access_key" id="access-key" value="<%= ACCESS_KEY %>">
           <input type="hidden" name="subject" value="New Contact Form Submission">
           <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
           
@@ -37,7 +37,10 @@
             <textarea id="message" name="message" rows="6" required></textarea>
           </div>
 
-          <div id="form-status" class="form-status"></div>
+          <div class="h-captcha" data-captcha="true"></div>
+
+          <div id="form-status-success" class="form-status success" data-en="Thank you for your message. We will contact you soon!" data-fr="Merci pour votre message. Nous vous contacterons bientôt !"></div>
+          <div id="form-status-error" class="form-status error" data-en="There was an error sending your message. Please try again." data-fr="Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer."></div>
           
           <button type="submit" data-en="Send Message" data-fr="Envoyer le Message">Send Message</button>
         </form>
@@ -46,5 +49,6 @@
 
     <div id="footer-placeholder"></div>
     <script src="../../src/js/main.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
   </body>
 </html>

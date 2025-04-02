@@ -8,8 +8,6 @@
     "generate": "npx ts-node build-script/main.ts"
   },
   "dependencies": {
-    "dotenv": "^16.3.1",
-    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.23.5",
@@ -20,7 +18,7 @@
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
     "css-minimizer-webpack-plugin": "^5.0.1",
-    "dotenv-webpack": "^8.0.1",
+    "dotenv": "^16.4.7",
     "ejs-loader": "^0.5.0",
     "html-bundler-webpack-plugin": "^4.19.2",
     "html-loader": "^5.1.0",
@@ -30,6 +28,7 @@
     "jsdom": "^22.1.0",
     "mini-css-extract-plugin": "^2.9.2",
     "style-loader": "^3.3.3",
+    "swiper": "^11.0.5",
     "terser-webpack-plugin": "^5.3.9",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2",

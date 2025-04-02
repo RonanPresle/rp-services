@@ -92,9 +92,6 @@ async function initializeHomeSwiper() {
           },
         },
       });
-
-      // Update the language for the newly added content
-      switchLanguage(currentLang, false);
     } catch (error) {
       console.error('Error loading featured products:', error);
     }
@@ -104,13 +101,9 @@ async function initializeHomeSwiper() {
 // Contact form handling
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
-  // Set the access key from environment variable
-  document.getElementById('access-key').value = process.env.WEB3FORM_ACCESS_KEY;
-
   contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const submitButton = contactForm.querySelector('button[type="submit"]');
-    const formStatus = document.getElementById('form-status');
     
     // Disable submit button during submission
     submitButton.disabled = true;
@@ -125,104 +118,19 @@ if (contactForm) {
       const data = await response.json();
       
       if (data.success) {
-        formStatus.textContent = currentLang === 'en' ? 
-          'Thank you for your message. We will contact you soon!' : 
-          'Merci pour votre message. Nous vous contacterons bientôt !';
-        formStatus.className = 'form-status success';
+        const formStatus = document.getElementById('form-status-success');
+        formStatus.className = 'form-status success visible';
         contactForm.reset();
       } else {
         throw new Error(data.message);
       }
     } catch (error) {
-      formStatus.textContent = currentLang === 'en' ? 
-        'There was an error sending your message. Please try again.' : 
-        'Une erreur s\'est produite lors de l\'envoi de votre message. Veuillez réessayer.';
-      formStatus.className = 'form-status error';
+      const formStatus = document.getElementById('form-status-error');
+      formStatus.className = 'form-status error visible';
     } finally {
       submitButton.disabled = false;
     }
   });
-}
-
-// Gallery page functionality
-const galleryGrid = document.getElementById('gallery-grid');
-if (galleryGrid) {
-  loadGallery();
-}
-
-async function loadGallery() {
-  try {
-    // Update the language for the newly added content
-    switchLanguage(currentLang, false);
-  } catch (error) {
-    console.error('Error loading gallery:', error);
-  }
-}
-
-// Product page functionality
-// if (window.location.pathname.includes('product.html')) {
-//   const urlParams = new URLSearchParams(window.location.search);
-//   const productId = urlParams.get('id');
-//   if (productId) {
-//     loadProductDetails(productId);
-//   }
-// }
-
-let currentProductId = null;
-
-async function loadProductDetails(productId) {
-  try {
-    // const response = await fetch('/data/products.json');
-    // const data = await response.json();
-    // const product = data.products[productId];
-    
-    // if (!product) {
-    //   console.error('Product not found');
-    //   return;
-    // }
-
-    // currentProductId = productId;
-    // updateProductContent(productId, currentLang);
-
-    // // Set up image gallery
-    // const mainImage = document.getElementById('main-image');
-    // const thumbnailGrid = document.getElementById('thumbnail-grid');
-    
-    // mainImage.src = product.images[0];
-    // mainImage.alt = product.titleEn;
-
-    // thumbnailGrid.innerHTML = '';
-    // product.images.forEach((image, index) => {
-    //   const thumbnail = document.createElement('div');
-    //   thumbnail.className = `thumbnail ${index === 0 ? 'active' : ''}`;
-    //   thumbnail.innerHTML = `<img src="${image}" alt="${product.titleEn} ${index + 1}" />`;
-      
-    //   thumbnail.addEventListener('click', () => {
-    //     mainImage.src = image;
-    //     document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
-    //     thumbnail.classList.add('active');
-    //   });
-      
-    //   thumbnailGrid.appendChild(thumbnail);
-    // });
-  } catch (error) {
-    console.error('Error loading product details:', error);
-  }
-}
-
-function updateProductContent(productId, lang) {
-  fetch('/data/products.json')
-    .then(response => response.json())
-    .then(data => {
-      const product = data.products[productId];
-      if (!product) return;
-
-      document.getElementById('product-title').textContent = 
-        lang === 'en' ? product.titleEn : product.titleFr;
-      document.getElementById('product-description').textContent = 
-        lang === 'en' ? product.descriptionEn : product.descriptionFr;
-    })
-    .catch(error => console.error('Error updating product content:', error));
 }
 
 // Initialize components and features
