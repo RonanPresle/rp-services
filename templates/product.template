@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product - RP Services</title>
+    <link rel="stylesheet" href="../../src/css/style.css" />
   </head>
   <body>
-    <div id="header-placeholder"></div>
+    <div id="nav-placeholder"></div>
 
     <main>
       <section class="product-details">
-        <a href="/gallery.html" class="back-link">
+        <a href="/generated/pages/gallery.html" class="back-link">
           <span data-en="← Back to Gallery" data-fr="← Retour à la Galerie">← Back to Gallery</span>
         </a>
         <div class="product-content">
@@ -27,7 +28,7 @@
             </div>
           </div>
         </div>
-        <a href="/gallery.html" class="back-link bottom">
+        <a href="/generated/pages/gallery.html" class="back-link bottom">
           <span data-en="← Back to Gallery" data-fr="← Retour à la Galerie">← Back to Gallery</span>
         </a>
       </section>
@@ -35,5 +36,6 @@
 
     <div id="footer-placeholder"></div>
 
+    <script src="../../src/js/main.js"></script>
   </body>
 </html>

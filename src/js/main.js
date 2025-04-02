@@ -1,19 +1,9 @@
-// Import styles
-import './style.css';
+
 
 // Language switching functionality
 let currentLang = localStorage.getItem('preferredLanguage') || 'fr';
 
 async function loadComponents() {
-  const headerResponse = await fetch('./components/header.html');
-  const footerResponse = await fetch('./components/footer.html');
-  
-  const headerHtml = await headerResponse.text();
-  const footerHtml = await footerResponse.text();
-  
-  document.getElementById('header-placeholder').innerHTML = headerHtml;
-  document.getElementById('footer-placeholder').innerHTML = footerHtml;
-  
   // After loading components, update active menu item and apply language
   updateActiveMenuItem();
   switchLanguage(currentLang, false);
@@ -59,41 +49,12 @@ function switchLanguage(lang, save = true) {
   document.querySelectorAll('[data-en][data-fr]').forEach(element => {
     element.textContent = element.dataset[lang];
   });
-
-  // Update product details if on product page
-  if (window.location.pathname.includes('product.html')) {
-    const urlParams = new URLSearchParams(window.location.search);
-    const productId = urlParams.get('id');
-    if (productId) {
-      updateProductContent(productId, lang);
-    }
-  }
 }
 
 // Initialize Swiper on homepage
 async function initializeHomeSwiper() {
   if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
     try {
-      const response = await fetch('data/products.json');
-      const data = await response.json();
-      const featuredProducts = document.getElementById('featured-products');
-      
-      Object.values(data.products).filter((product)=>product.featured).slice(0, 6).forEach(product => {
-        const slide = document.createElement('div');
-        slide.className = 'swiper-slide';
-        
-        slide.innerHTML = `
-          <a href="./product.html?id=${product.id}" class="featured-product">
-            <img src="${product.images[0]}" alt="${product.titleEn}" />
-            <div class="featured-product-info">
-              <h3 data-en="${product.titleEn}" data-fr="${product.titleFr}">${product.titleEn}</h3>
-            </div>
-          </a>
-        `;
-        
-        featuredProducts.appendChild(slide);
-      });
-
       new Swiper('.featured-swiper', {
         slidesPerView: 3,
         centeredSlides: true,
@@ -191,23 +152,6 @@ if (galleryGrid) {
 
 async function loadGallery() {
   try {
-    const response = await fetch('/data/products.json');
-    const data = await response.json();
-    const galleryGrid = document.getElementById('gallery-grid');
-    
-    Object.values(data.products).forEach(product => {
-      const item = document.createElement('a');
-      item.href = `/product.html?id=${product.id}`;
-      item.className = 'gallery-item';
-      
-      item.innerHTML = `
-        <img src="${product.images[0]}" alt="${product.titleEn}" />
-        <p data-en="${product.titleEn}" data-fr="${product.titleFr}">${product.titleEn}</p>
-      `;
-      
-      galleryGrid.appendChild(item);
-    });
-
     // Update the language for the newly added content
     switchLanguage(currentLang, false);
   } catch (error) {
@@ -216,51 +160,51 @@ async function loadGallery() {
 }
 
 // Product page functionality
-if (window.location.pathname.includes('product.html')) {
-  const urlParams = new URLSearchParams(window.location.search);
-  const productId = urlParams.get('id');
-  if (productId) {
-    loadProductDetails(productId);
-  }
-}
+// if (window.location.pathname.includes('product.html')) {
+//   const urlParams = new URLSearchParams(window.location.search);
+//   const productId = urlParams.get('id');
+//   if (productId) {
+//     loadProductDetails(productId);
+//   }
+// }
 
 let currentProductId = null;
 
 async function loadProductDetails(productId) {
   try {
-    const response = await fetch('/data/products.json');
-    const data = await response.json();
-    const product = data.products[productId];
+    // const response = await fetch('/data/products.json');
+    // const data = await response.json();
+    // const product = data.products[productId];
     
-    if (!product) {
-      console.error('Product not found');
-      return;
-    }
+    // if (!product) {
+    //   console.error('Product not found');
+    //   return;
+    // }
 
-    currentProductId = productId;
-    updateProductContent(productId, currentLang);
+    // currentProductId = productId;
+    // updateProductContent(productId, currentLang);
 
-    // Set up image gallery
-    const mainImage = document.getElementById('main-image');
-    const thumbnailGrid = document.getElementById('thumbnail-grid');
+    // // Set up image gallery
+    // const mainImage = document.getElementById('main-image');
+    // const thumbnailGrid = document.getElementById('thumbnail-grid');
     
-    mainImage.src = product.images[0];
-    mainImage.alt = product.titleEn;
+    // mainImage.src = product.images[0];
+    // mainImage.alt = product.titleEn;
 
-    thumbnailGrid.innerHTML = '';
-    product.images.forEach((image, index) => {
-      const thumbnail = document.createElement('div');
-      thumbnail.className = `thumbnail ${index === 0 ? 'active' : ''}`;
-      thumbnail.innerHTML = `<img src="${image}" alt="${product.titleEn} ${index + 1}" />`;
+    // thumbnailGrid.innerHTML = '';
+    // product.images.forEach((image, index) => {
+    //   const thumbnail = document.createElement('div');
+    //   thumbnail.className = `thumbnail ${index === 0 ? 'active' : ''}`;
+    //   thumbnail.innerHTML = `<img src="${image}" alt="${product.titleEn} ${index + 1}" />`;
       
-      thumbnail.addEventListener('click', () => {
-        mainImage.src = image;
-        document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
-        thumbnail.classList.add('active');
-      });
+    //   thumbnail.addEventListener('click', () => {
+    //     mainImage.src = image;
+    //     document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
+    //     thumbnail.classList.add('active');
+    //   });
       
-      thumbnailGrid.appendChild(thumbnail);
-    });
+    //   thumbnailGrid.appendChild(thumbnail);
+    // });
   } catch (error) {
     console.error('Error loading product details:', error);
   }

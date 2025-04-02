@@ -38,7 +38,7 @@ jobs:
 
       - name: Build project
         env:
-          VITE_WEBFORM_ACCESS_KEY: ${{ secrets.VITE_WEBFORM_ACCESS_KEY }}
+          WEB3FORM_ACCESS_KEY: ${{ secrets.WEB3FORM_ACCESS_KEY }}
         run: npm run build
 
       - name: Upload artifact
