@@ -110,16 +110,13 @@ if (contactForm) {
 
     try {
       const formData = {};
-      const inputs = contactForm.querySelectorAll('input, textarea, select');
+      const inputs = contactForm.querySelectorAll('input, textarea', 'select');
       inputs.forEach((input) => {
         if (input.name) {
           formData[input.name] = input.value;
         }
       });
-      console.log('Form data:', formData.keys());
-      for (const [key, value] of formData.entries()) {
-        console.log(`${key}: ${value}`);
-      }
+      console.log('Form data:', JSON.stringify(formData));
       const response = await fetch(contactForm.action, {
         method: 'POST',
         headers: {
@@ -139,7 +136,7 @@ if (contactForm) {
         throw new Error(data.message);
       }
     } catch (error) {
-      console.log('Error:', data);
+      console.log('Error:', error);
       const formStatus = document.getElementById('form-status-error');
       formStatus.className = 'form-status error visible';
     } finally {
