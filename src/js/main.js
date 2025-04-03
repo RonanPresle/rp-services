@@ -13,7 +13,7 @@ async function loadComponents() {
 function updateActiveMenuItem() {
   const currentPath = window.location.pathname;
   const menuItems = document.querySelectorAll('.menu a');
-  
+
   menuItems.forEach(item => {
     if (item.getAttribute('href') === currentPath) {
       item.classList.add('active');
@@ -25,7 +25,7 @@ function updateActiveMenuItem() {
 
 function setupLanguageButtons() {
   const langButtons = document.querySelectorAll('.lang-btn');
-  
+
   langButtons.forEach(btn => {
     btn.addEventListener('click', () => switchLanguage(btn.dataset.lang));
   });
@@ -36,9 +36,9 @@ function switchLanguage(lang, save = true) {
   if (save) {
     localStorage.setItem('preferredLanguage', lang);
   }
-  
+
   document.documentElement.lang = lang;
-  
+
   // Update active button state
   const langButtons = document.querySelectorAll('.lang-btn');
   langButtons.forEach(btn => {
@@ -104,27 +104,42 @@ if (contactForm) {
   contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const submitButton = contactForm.querySelector('button[type="submit"]');
-    
+
     // Disable submit button during submission
     submitButton.disabled = true;
-    
+
     try {
-      const formData = new FormData(contactForm);
+      const formData = {};
+      const inputs = contactForm.querySelectorAll('input, textarea, select');
+      inputs.forEach((input) => {
+        if (input.name) {
+          formData[input.name] = input.value;
+        }
+      });
+      console.log('Form data:', formData.keys());
+      for (const [key, value] of formData.entries()) {
+        console.log(`${key}: ${value}`);
+      }
       const response = await fetch(contactForm.action, {
         method: 'POST',
-        body: formData
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-      
+
       const data = await response.json();
-      
+
       if (data.success) {
         const formStatus = document.getElementById('form-status-success');
         formStatus.className = 'form-status success visible';
         contactForm.reset();
       } else {
+        console.log('Error:', data);
         throw new Error(data.message);
       }
     } catch (error) {
+      console.log('Error:', data);
       const formStatus = document.getElementById('form-status-error');
       formStatus.className = 'form-status error visible';
     } finally {
