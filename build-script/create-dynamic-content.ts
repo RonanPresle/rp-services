@@ -18,7 +18,7 @@ function generateGalleryContent(products: ProductsData): string {
 
 function addSwiperContent(products: ProductsData, domContent: Document): Document {
     const newDocument = domContent.cloneNode(true) as Document;
-    const featuredProducts = newDocument.getElementById(DomDynamicAnchor.GALLERY_CONTAINER_ID);
+    const featuredProducts = newDocument.getElementById(DomDynamicAnchor.SWIPPER_CONTAINER_ID);
     if (featuredProducts) {
         featuredProducts.innerHTML = generateSwiperContent(products);
     }
