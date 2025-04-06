@@ -53,7 +53,8 @@ function switchLanguage(lang, save = true) {
 
 // Initialize Swiper on homepage
 async function initializeHomeSwiper() {
-  if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+  const swiperContainer = document.getElementById('swiper-container');
+  if (swiperContainer) {
     try {
       new Swiper('.featured-swiper', {
         slidesPerView: 3,
