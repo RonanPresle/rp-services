@@ -47,7 +47,7 @@ module.exports = (argv: { mode: string }): Configuration => {
                     ACCESS_KEY: process.env.WEB3FORM_ACCESS_KEY, // Inject the ACCESS_KEY environment variable
                 },
                 sources: [{ tag: 'a', attributes: ['href'] }],
-                minify: false
+                minify: false,
             }),
         ],
         module: {

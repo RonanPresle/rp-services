@@ -53,15 +53,16 @@
       "featured": true
     },
     "bookshelf": {
-      "id": "bookshelf",
+      "id": "cherry-bookshelf",
       "titleEn": "Book shelf",
       "titleFr": "Bibliothèque",
-      "descriptionEn": "English description for the bookshelf",
-      "descriptionFr": "Description en français pour la bibliothèuqe.",
+      "descriptionEn": "Cherry wood bookshelf with an original design. Ideal for corner placement, it highlights the most beautiful books.",
+      "descriptionFr": "Bibliothèque en cerisier au design original. Idéale pour un positionnement en angle, elle permet de mettre en avant les plus beaux ouvrages",
       "images": [
-        "https://picsum.photos/800/600?random=13",
-        "https://picsum.photos/800/600?random=14",
-        "https://picsum.photos/800/600?random=15"
+        "/public/images/bibliotheque-cerisier/bibliotheque-cerisier-1.png",
+        "/public/images/bibliotheque-cerisier/bibliotheque-cerisier-2.png",
+        "/public/images/bibliotheque-cerisier/bibliotheque-cerisier-3.png",
+        "/public/images/bibliotheque-cerisier/bibliotheque-cerisier-4.png"
       ],
       "featured": true
     }

@@ -146,6 +146,32 @@ if (contactForm) {
   });
 }
 
+const productContentElement = document.getElementById('product-content');
+if(productContentElement) {
+  try {
+
+    const mainImage = document.getElementById('main-image');
+    const thumbnails = document.querySelectorAll('.thumbnail'); // Select all thumbnail divs
+
+    thumbnails.forEach((thumbnail) => {
+      thumbnail.addEventListener('click', () => {
+        const img = thumbnail.querySelector('img'); // Find the <img> inside the thumbnail div
+        if (img) {
+          console.log('Thumbnail clicked:', img.src);
+          mainImage.src = img.src; // Set the main image's src to the thumbnail's img src
+
+          // Update the active class
+          document.querySelectorAll('.thumbnail').forEach((thumb) => thumb.classList.remove('active'));
+          thumbnail.classList.add('active'); // Add 'active' to the clicked thumbnail div
+        }
+      });
+    });
+    
+  } catch (error) {
+    console.error('Error loading product details:', error);
+  }
+}
+
 // Initialize components and features
 document.addEventListener('DOMContentLoaded', async () => {
   await loadComponents();
