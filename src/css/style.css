@@ -25,7 +25,11 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav {
+ul {
+  list-style: none;
+}
+
+.main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,11 +83,17 @@ nav {
   opacity: 0.4;
 }
 
-.menu {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding: 0.75rem;
+.sub-nav {
+  padding: 0 0.75rem;
+  background-color: var(--primary-color);
+}
+
+.nav {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
   background-color: var(--primary-color);
 }
 
@@ -522,6 +532,92 @@ footer .social-media a:hover img {
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 1.2rem;
+}
+
+/* Menu Icon */
+.hamburger {
+  cursor: pointer;
+  padding: 2rem;
+}
+
+.hamburger-line {
+  position: relative;
+  display: block;
+  height: 2px;
+  width: 1.5rem;
+  background: var(--white);
+}
+
+.hamburger-line::before,
+.hamburger-line::after{
+  position: absolute;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: var(--white);
+}
+.hamburger-line::before{
+  top: 5px;
+}
+
+.hamburger-line::after{
+  top: -5px;
+}
+
+.side-menu {
+  display: none;
+}
+
+.side-menu:checked ~ nav{
+  max-height: 100%;
+}
+
+.side-menu:checked ~ .hamburger .hamburger-line {
+  background: transparent;
+}
+
+.side-menu:checked ~ .hamburger .hamburger-line::before {
+  transform: rotate(-45deg);
+  top:0;
+}
+.side-menu:checked ~ .hamburger .hamburger-line::after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+.-mobile {
+  display: flex;
+}
+
+.-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-height: none;
+  }
+
+  .menu {
+    display: flex;
+    padding: 1rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .-mobile {
+    display: none;
+  }
+
+  .-desktop {
+    display: flex;
+  }
 }
 
 @media (max-width: 768px) {
