@@ -1,12 +1,12 @@
 import { join } from 'path';
-import { writeTextToGeneratedDir, readHtmlFileDom, writeBatchToGeneratedDir } from './file-utils';
+import { readHtmlFileDom, writeBatchToGeneratedDir } from './file-utils';
 import { ProductsData, WrittingBatchParameter } from './type';
 import { generateProductPageContent } from './html-generator';
 
 async function generateProducts(productsData: ProductsData): Promise<void> {
     console.log(`Generating product pages. (${Object.keys(productsData.products).join(", ")} products)`);
 
-    const productTemplatePath = join(__dirname, '..', 'templates', 'product.template');
+    const productTemplatePath = join(__dirname, '..', 'templates', 'product.template.html');
     const productTemplateDom = await readHtmlFileDom(productTemplatePath);
 
     const fileToCreate: WrittingBatchParameter[] = [];

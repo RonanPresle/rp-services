@@ -1,68 +1,97 @@
 {
   "products": {
-    "consulting": {
-      "id": "consulting",
-      "titleEn": "Professional Consulting",
-      "titleFr": "Consultation Professionnelle",
-      "descriptionEn": "Our professional consulting services help businesses optimize their operations and achieve their strategic goals. With years of experience across various industries, we provide tailored solutions that drive real results.",
-      "descriptionFr": "Nos services de consultation professionnelle aident les entreprises à optimiser leurs opérations et à atteindre leurs objectifs stratégiques. Avec des années d'expérience dans divers secteurs, nous fournissons des solutions sur mesure qui génèrent des résultats concrets.",
+    "lotr-serving-tray": {
+      "id": "lotr-serving-tray",
+      "titleEn": "Serving tray",
+      "titleFr": "Plateau de service",
+      "descriptionEn": "Black walnut tray. The bottom of the tray is engraved with the map of Middle-earth from the Lord of the Rings universe. Large enough to hold several plates, it is also an ideal decorative piece for fans of the saga.",
+      "descriptionFr": "Plateau en noyer noir. Le fond du plateau est gravé avec la carte de la Terre du Milieu de l'univers du Seigneur des Anneaux. Suffisamment grand pour accueillir plusieurs assiettes, il est également un élément de décoration idéal pour les fans de la saga.",
       "images": [
-        "https://picsum.photos/800/600?random=1",
-        "https://picsum.photos/800/600?random=2",
-        "https://picsum.photos/800/600?random=3"
+        "/public/images/lotr-serving-tray/lotr-serving-tray-1.jpg",
+        "/public/images/lotr-serving-tray/lotr-serving-tray-2.jpg",
+        "/public/images/lotr-serving-tray/lotr-serving-tray-3.jpg",
+        "/public/images/lotr-serving-tray/lotr-serving-tray-4.jpg",
+        "/public/images/lotr-serving-tray/lotr-serving-tray-5.jpg"
       ],
       "featured": true
     },
-    "business-solutions": {
-      "id": "business-solutions",
-      "titleEn": "Business Solutions",
-      "titleFr": "Solutions d'Affaires",
-      "descriptionEn": "Our comprehensive business solutions encompass everything from digital transformation to process optimization. We work closely with our clients to implement innovative solutions that drive efficiency and growth.",
-      "descriptionFr": "Nos solutions d'affaires complètes englobent tout, de la transformation numérique à l'optimisation des processus. Nous travaillons en étroite collaboration avec nos clients pour mettre en œuvre des solutions innovantes qui favorisent l'efficacité et la croissance.",
-      "images": [
-        "https://picsum.photos/800/600?random=4",
-        "https://picsum.photos/800/600?random=5",
-        "https://picsum.photos/800/600?random=6"
-      ],
-      "featured": true
-    },
-    "team-collaboration": {
-      "id": "team-collaboration",
-      "titleEn": "Team Collaboration",
-      "titleFr": "Collaboration d'Équipe",
-      "descriptionEn": "Our team collaboration solutions help organizations build stronger, more efficient teams. We provide tools and methodologies that enhance communication, productivity, and team synergy.",
-      "descriptionFr": "Nos solutions de collaboration d'équipe aident les organisations à construire des équipes plus fortes et plus efficaces. Nous fournissons des outils et des méthodologies qui améliorent la communication, la productivité et la synergie d'équipe.",
-      "images": [
-        "https://picsum.photos/800/600?random=7",
-        "https://picsum.photos/800/600?random=8",
-        "https://picsum.photos/800/600?random=9"
-      ],
-      "featured": true
-    },
-    "innovation-hub": {
-      "id": "innovation-hub",
-      "titleEn": "Innovation Hub",
-      "titleFr": "Centre d'Innovation",
-      "descriptionEn": "Our innovation hub is where ideas transform into reality. We provide a creative environment and expert guidance to help businesses develop and implement innovative solutions.",
-      "descriptionFr": "Notre centre d'innovation est l'endroit où les idées se transforment en réalité. Nous fournissons un environnement créatif et des conseils d'experts pour aider les entreprises à développer et à mettre en œuvre des solutions innovantes.",
-      "images": [
-        "https://picsum.photos/800/600?random=10",
-        "https://picsum.photos/800/600?random=11",
-        "https://picsum.photos/800/600?random=12"
-      ],
-      "featured": true
-    },
-    "bookshelf": {
+    "cherry-bookshelf": {
       "id": "cherry-bookshelf",
       "titleEn": "Book shelf",
       "titleFr": "Bibliothèque",
       "descriptionEn": "Cherry wood bookshelf with an original design. Ideal for corner placement, it highlights the most beautiful books.",
       "descriptionFr": "Bibliothèque en cerisier au design original. Idéale pour un positionnement en angle, elle permet de mettre en avant les plus beaux ouvrages",
       "images": [
-        "/public/images/bibliotheque-cerisier/bibliotheque-cerisier-1.png",
-        "/public/images/bibliotheque-cerisier/bibliotheque-cerisier-2.png",
-        "/public/images/bibliotheque-cerisier/bibliotheque-cerisier-3.png",
-        "/public/images/bibliotheque-cerisier/bibliotheque-cerisier-4.png"
+        "/public/images/cherry-bookshelf/cherry-bookshelf-1.jpg",
+        "/public/images/cherry-bookshelf/cherry-bookshelf-2.jpg",
+        "/public/images/cherry-bookshelf/cherry-bookshelf-3.jpg",
+        "/public/images/cherry-bookshelf/cherry-bookshelf-4.jpg"
+      ],
+      "featured": true
+    },
+    "cherry-bed-frame": {
+      "id": "cherry-bed-frame",
+      "titleEn": "Bed frame",
+      "titleFr": "Base de lit",
+      "descriptionEn": "Cherry and pine bed frame. Queen-sized, it is fully dismountable to be ready for future moves. Particularly robust and stable, it is designed to last over time. Four large storage drawers are integrated to optimize the space under the bed.",
+      "descriptionFr": "Base de lit en cerisier et pin. De taille Queen, elle est entièrement démontable pour être prête pour les futurs déménagements. Particulièrement robuste et stable, elle est conçue pour durer dans le temps. 4 grand tiroirs de rangement sont intégrés pour optimiser l'espace sous le lit.",
+      "images": [
+        "/public/images/cherry-bed-frame/cherry-bed-frame-1.jpg",
+        "/public/images/cherry-bed-frame/cherry-bed-frame-2.jpg",
+        "/public/images/cherry-bed-frame/cherry-bed-frame-3.jpg",
+        "/public/images/cherry-bed-frame/cherry-bed-frame-4.jpg",
+        "/public/images/cherry-bed-frame/cherry-bed-frame-5.jpg"
+      ],
+      "featured": true
+    },
+    "stairs-planter": {
+      "id": "stairs-planter",
+      "titleEn": "Planter for stairs",
+      "titleFr": "Bac de jardinage",
+      "descriptionEn": "Cedar gardening planter for stairs. It is designed to be placed on an outdoor staircase and allows for the cultivation of aromatic plants, vegetables, or flowers. Its large volume is sufficient to accommodate large varieties of tomatoes or other vegetables.",
+      "descriptionFr": "Bac de jardinage en cèdre pour escalier. Il est conçu pour être placé sur un escalier extérieur et permet de cultiver des plantes aromatiques, légumes ou des fleurs. Son volume important est suffisant pour accueillir des grandes variétés de tomates ou autre légumes.",
+      "images": [
+        "/public/images/stairs-planter/stairs-planter-1.jpg",
+        "/public/images/stairs-planter/stairs-planter-2.jpg",
+        "/public/images/stairs-planter/stairs-planter-3.jpg",
+        "/public/images/stairs-planter/stairs-planter-4.jpg"
+      ],
+      "featured": true
+    },
+    "suzume-chair": {
+      "id": "suzume-chair",
+      "titleEn": "Chair from the movie Suzume",
+      "titleFr": "Chaise du film Suzume",
+      "descriptionEn": "Pine chair. For fans of the Suzume universe, this chair will perfectly complement your interior decor. Don't leave the window open, it might escape!",
+      "descriptionFr": "Chaise en pin. Pour les fans de l'univers de Suzume, cette chaise completera parfaitement votre décoration d'intérieur. Ne laissez pas la fenêtre ouverte, elle pourrait s'échapper !",
+      "images": [
+        "/public/images/suzume-chair/suzume-chair-1.jpg",
+        "/public/images/suzume-chair/suzume-chair-2.jpg"
+      ],
+      "featured": false
+    }
+  },
+  "draft": {
+    "bin-hider": {
+      "id": "bin-hider",
+      "titleEn": "Chair from the movie Suzume",
+      "titleFr": "Cache poubelle de Montréal",
+      "descriptionEn": "Cedar bin hider. If you're tired of seeing your trash bins, this bin hider is made for you. It is designed to be placed on your balcony or terrace. Add some flowers on top and forget about your trash bins!",
+      "descriptionFr": "Cache poubelle en cèdre. Si vous êtes tanné de voir vos poubelles, ce cache poubelle est fait pour vous. Il est conçu pour être placé sur votre balcon ou votre terrasse. Ajoutez quelques fleurs dessus et oubliez vos poubelles !",
+      "images": [
+        "/public/images/bin-hider/bin-hider-1.png"
+      ],
+      "featured": false
+    },
+    
+    "cube-lamp": {
+      "id": "cube-lamp",
+      "titleEn": "Cube lamp",
+      "titleFr": "Lampe cube",
+      "descriptionEn": "Cherry cube lamp. Its original design and warm colors make it an ideal decorative piece for a bedroom or an office.",
+      "descriptionFr": "Lampe cube en cerisier. Son design original et ses couleurs chaudes en font un élément de décoration idéal pour une chambre ou un bureau.",
+      "images": [
+        "/public/images/cube-lamp/cube-lamp-1.png"
       ],
       "featured": true
     }
