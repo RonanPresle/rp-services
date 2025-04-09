@@ -1,5 +1,3 @@
-
-
 // Language switching functionality
 let currentLang = localStorage.getItem('preferredLanguage') || 'fr';
 
@@ -56,7 +54,7 @@ async function initializeHomeSwiper() {
   const swiperContainer = document.getElementById('swiper-container');
   if (swiperContainer) {
     try {
-      new Swiper('.featured-swiper', {
+      new Swiper('.swiper', {
         slidesPerView: 3,
         centeredSlides: true,
         spaceBetween: 30,
