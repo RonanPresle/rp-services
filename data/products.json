@@ -69,9 +69,21 @@
         "/public/images/suzume-chair/suzume-chair-2.jpg"
       ],
       "featured": false
-    }
-  },
-  "draft": {
+    },    
+    "bicolor-bench": {
+      "id": "bicolor-bench",
+      "titleEn": "Bicolor bench",
+      "titleFr": "Banc bicolore",
+      "descriptionEn": "Bench made of maple and black walnut. The combination of these two colors is perfect for this bench. Its size makes it a practical and decorative piece for your entryway or bedroom.",
+      "descriptionFr": "Banc en érable et en noyer noir. Le mariage de ces deux couleurs est parfait pour ce banc. Sa taille en fait un élément pratique et décoratif pour votre entrée ou votre chambre.",
+      "images": [
+        "/public/images/bicolor-bench/bicolor-bench-1.jpg",
+        "/public/images/bicolor-bench/bicolor-bench-2.jpg",
+        "/public/images/bicolor-bench/bicolor-bench-3.jpg"
+      ],
+      "featured": false
+    },
+    
     "bin-hider": {
       "id": "bin-hider",
       "titleEn": "Chair from the movie Suzume",
@@ -79,7 +91,8 @@
       "descriptionEn": "Cedar bin hider. If you're tired of seeing your trash bins, this bin hider is made for you. It is designed to be placed on your balcony or terrace. Add some flowers on top and forget about your trash bins!",
       "descriptionFr": "Cache poubelle en cèdre. Si vous êtes tanné de voir vos poubelles, ce cache poubelle est fait pour vous. Il est conçu pour être placé sur votre balcon ou votre terrasse. Ajoutez quelques fleurs dessus et oubliez vos poubelles !",
       "images": [
-        "/public/images/bin-hider/bin-hider-1.png"
+        "/public/images/bin-hider/bin-hider-1.jpg",
+        "/public/images/bin-hider/bin-hider-2.jpg"
       ],
       "featured": false
     },
@@ -91,9 +104,30 @@
       "descriptionEn": "Cherry cube lamp. Its original design and warm colors make it an ideal decorative piece for a bedroom or an office.",
       "descriptionFr": "Lampe cube en cerisier. Son design original et ses couleurs chaudes en font un élément de décoration idéal pour une chambre ou un bureau.",
       "images": [
-        "/public/images/cube-lamp/cube-lamp-1.png"
+        "/public/images/cube-lamp/cube-lamp-1.jpg",
+        "/public/images/cube-lamp/cube-lamp-2.jpg",
+        "/public/images/cube-lamp/cube-lamp-3.jpg",
+        "/public/images/cube-lamp/cube-lamp-4.jpg"
       ],
       "featured": true
+    },
+    
+    
+    "pine-mail-box": {
+      "id": "pine-mail-box",
+      "titleEn": "Mail box",
+      "titleFr": "Boîte aux lettres",
+      "descriptionEn": "Pine mailbox. A mailbox with a simple design but a large capacity. It easily holds mail and small packages delivered to your home while you're away.",
+      "descriptionFr": "Boîte aux lettres en pin. Une boîte aux lettres au design simple mais avec un gros volume. Elle accueille facilement le courrier et les petits colis livrés à la maison pendant votre absence.",
+      "images": [
+        "/public/images/pine-mail-box/pine-mail-box-1.jpg",
+        "/public/images/pine-mail-box/pine-mail-box-2.jpg",
+        "/public/images/pine-mail-box/pine-mail-box-3.jpg",
+        "/public/images/pine-mail-box/pine-mail-box-4.jpg"
+      ],
+      "featured": false
     }
+  },
+  "draft": {
   }
 }
