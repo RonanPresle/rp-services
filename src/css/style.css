@@ -635,3 +635,10 @@ footer .social-media a:hover img {
     height: 300px;
   }
 }
+
+@media (max-width: 480px) {
+  .h-captcha {
+    transform: scale(0.7);
+    transform-origin: 0 0;
+  }
+}
