@@ -49,10 +49,8 @@ ul {
   opacity: 0.8;
 }
 
-.site-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--primary-color);
+.logo img{
+  height: 140px;
 }
 
 .language-selector {
@@ -85,7 +83,6 @@ ul {
 
 .sub-nav {
   padding: 0 0.75rem;
-  background-color: var(--primary-color);
 }
 
 .nav {
@@ -94,14 +91,14 @@ ul {
   width: 100%;
   max-height: 0;
   overflow: hidden;
-  background-color: var(--primary-color);
 }
 
 .menu a {
-  color: var(--white);
+  color: var(--text-color);
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
+  font-size: 1.2rem;
   transition: background-color 0.3s;
 }
 
