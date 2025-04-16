@@ -81,10 +81,6 @@ ul {
   opacity: 0.4;
 }
 
-.sub-nav {
-  padding: 0 0.75rem;
-}
-
 .nav {
   position: absolute;
   left: 0;
@@ -531,7 +527,7 @@ footer .social-media a:hover img {
   display: block;
   height: 2px;
   width: 1.5rem;
-  background: var(--white);
+  background: var(--primary-color);
 }
 
 .hamburger-line::before,
@@ -541,7 +537,7 @@ footer .social-media a:hover img {
   display: block;
   height: 100%;
   width: 100%;
-  background: var(--white);
+  background: var(--primary-color);
 }
 .hamburger-line::before{
   top: 5px;
@@ -634,6 +630,10 @@ footer .social-media a:hover img {
   
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .logo img{
+    height: 100px;
   }
 }
 
