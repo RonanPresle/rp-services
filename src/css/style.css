@@ -641,6 +641,10 @@ footer .social-media a:hover img {
   .logo img{
     height: 100px;
   }
+
+  .menu li {
+    padding-bottom: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
