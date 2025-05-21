@@ -619,7 +619,8 @@ footer .social-media a:hover img {
 
   .about-section {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
   }
 
   .about-section.reverse {
@@ -652,6 +653,10 @@ footer .social-media a:hover img {
   
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .gallery h1 {
+    margin-bottom: 1rem;
   }
 
   .logo img{
