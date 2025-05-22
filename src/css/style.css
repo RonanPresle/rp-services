@@ -664,7 +664,11 @@ footer .social-media a:hover img {
   }
 
   .menu li {
-    padding-bottom: 1rem;
+    padding-bottom: 0.7rem;
+  }
+
+  .menu a {
+    font-size: 1.2rem;
   }
 }
 
