@@ -1,5 +1,30 @@
 {
   "products": {
+    "pine-nightstand": {
+      "id": "pine-nightstand",
+      "titleEn": "Nightstand",
+      "titleFr": "Table de chevet",
+      "descriptionEn": "Pine nightstand. The size is customized to accompany a large bed in the available space of this bedroom. The built-in drawer adds storage while echoing the style of the room. An integrated power strip allows for easy charging of electronic devices.",
+      "descriptionFr": "Table de chevet en pin. Le format est personnalisé pour accompagner un lit de grand taille dans l'espace disponible de cette chambre. Le tiroir intégré ajoute du rangement tout en rappelant le style de la pièce. Une multiprise intégrée permet de recharger facilement les appareils électroniques.",
+      "images": [
+        "/public/images/pine-nightstand/pine-nightstand-1.jpg",
+        "/public/images/pine-nightstand/pine-nightstand-2.jpg",
+        "/public/images/pine-nightstand/pine-nightstand-3.jpg"
+      ],
+      "featured": false
+    },
+    "pine-bedframe": {
+      "id": "pine-bed-frame",
+      "titleEn": "Bed frame",
+      "titleFr": "Base de lit",
+      "descriptionEn": "Pine bed frame. Queen-sized, this simple design allows for storage drawers to be slid underneath to optimize space. Robust and stable, it is designed to last over time.",
+      "descriptionFr": "Base de lit en pin. De taille queen, ce design simple permet de glisser des tiroirs de rangement en dessous pour optimiser l'espace. Robuste et stable, elle est conçue pour durer dans le temps.",
+      "images": [
+        "/public/images/pine-bed-frame/pine-bed-frame-1.jpg",
+        "/public/images/pine-bed-frame/pine-bed-frame-2.jpg"
+      ],
+      "featured": true
+    },
     "lotr-serving-tray": {
       "id": "lotr-serving-tray",
       "titleEn": "Serving tray",
